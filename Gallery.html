@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel sri lanka</title>
+    <link rel="stylesheet" href="stylesheets/GalleryCSS.css">
+    <link rel="icon" href="Image/Shan/Logo.png" type="image">
+    <script src="https://kit.fontawesome.com/855201d3bf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+</head>
+<body id="font">
+    <!---- Start navigation bar ---->
+    <div class="header">
+        <img src="Image/navBar.jpg" alt="image" width="100%" height="100%" >
+        <div class="navigation-bar">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="AboutUs.html">About us</a></li>
+                <li><a href="SiteMap.html">Site Map</a></li>
+            </ul>
+        </div>
+    </div>
+    <!---- End navigation bar ---->
+
+    <!---- Font Size Start ---->
+    <div class="font-Size">
+        <button type="button" onclick="myFunction1()"> Small </button>
+        <button type="button" onclick="myFunction2()"> Normal </button>
+        <button type="button" onclick="myFunction3()"> Large </button>
+        <button type="button" onclick="myFunction4()"> Extra Large </button>
+    </div>
+    <!---- Font Size End ---->
+
+    <div class="heading">
+        <h1 id="myH1">Gallery</h1>
+    </div>
+
+    <!----------------------------Start Gallery------------------------------>
+    <div id="myH2">
+
+        <div class="rowOne">
+            <div class="columnOne">
+                <div class="picBox">
+                    <img src="Image/Sigiriya/Sigiriya%2013.webp">
+                    <div class="desc">Sigiriya :<a href="Sigiriya.html"> View more </a></div>
+                </div>
+            </div>
+
+            <div class="columnOne">
+                <div class="picBox">
+                    <img src="Image/Ella/Ella%2004.jpg">
+                    <div class="desc">Ella :<a href="Ella.html"> View more</a></div>
+                </div>
+            </div>
+
+            <div class="columnOne">
+                <div class="picBox">
+                    <img src="Image/Anuradapura/Anuradapura%2001.jpg">
+                    <div class="desc">Anuradapura :<a href="Anuradhapura.html"> View more </a></div>
+                </div>
+            </div>
+        </div>>
+
+        <div class="rowTwo">
+            <div class="columnTwo">
+                <div class="picBox">
+                    <img src="Image/Hot%20Air%20Baloon/Air%20Baloon%2001.jpg">
+                    <div class="desc">Hot Air Baloon :<a href="Air Baloon.html"> View more </a></div>
+                </div>
+            </div>
+
+            <div class="columnTwo">
+                <div class="picBox">
+                    <img src="Image/Worlds%20End/Worlds%20End%2001.jpg">
+                    <div class="desc">World's End :<a href="World_s%20End.html"> View more </a></div>
+                </div>
+            </div>
+
+            <div class="columnTwo">
+                <div class="picBox">
+                    <img src="Image/Dalada%20Magigawa/Dalada%20Maligawa%2004.jpg">
+                    <div class="desc">Temple of the Tooth :<a href="Temple of the Tooth.html"> View more </a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rowThree">
+            <div class="columnTwo">
+                <div class="picBox">
+                    <img src="Image/Ridiyagama/Ridiyagama.jpg">
+                    <div class="desc">Ridiyagama Park :<a href="Ridiyagama.html"> View more </a></div>
+                </div>
+            </div>
+
+            <div class="columnTwo">
+                <div class="picBox">
+                    <img src="Image/Yala/cover1.jpg">
+                    <div class="desc">Yala :<a href="Yala.html"> View more </a></div>
+                </div>
+            </div>
+
+            <div class="columnTwo">
+                <div class="picBox">
+                    <img src="Image/Riverston/Riverston 10.jpg">
+                    <div class="desc">Riverston :<a href="Riverston.html"> View more </a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------End Gallery------------------------------>
+
+
+        <!--------Background color change----------->
+        <div class="bcgColorChange">
+            <h4><U>*SELECT BACKGROUND COLOR*</U></h4>
+            <a onclick="changeColor('red')" id="red">#EF9A9A</a>
+            <a onclick="changeColor('blue')" id="blue">#74b9ff</a>
+            <a onclick="changeColor('yellow')" id="yellow">#fdcb6e</a>
+            <a onclick="changeColor('purple')" id="purple">#8E24AA</a>
+            <a onclick="changeColor('default')" id="default">#FFFFFF</a>
+        </div>
+
+        <script type="text/javascript">
+            function changeColor(id) {
+                document.body.style.background = document.getElementById(id).innerHTML;
+            }
+        </script>
+        <!------ End background color change ----->
+
+        <!-- Start letter color change-->
+        <div class="ltrColorChange">
+            <h4><U>*** SELECT LETTERS COLOR ***</U></h4>
+            <a onclick="changeLtColor('#D32F2F')" id="ltRed">#D32F2F</a>
+            <a onclick="changeLtColor('#0D47A1')" id="ltBlue">#0D47A1</a>
+            <a onclick="changeLtColor('#F57F17')" id="ltYellow">#F57F17</a>
+            <a onclick="changeLtColor('#D5A6BD')" id="ltPurple">#D5A6BD</a>
+            <a onclick="changeLtColor('#000000')" id="ltDefault">#000000</a>
+        </div>
+
+        <script>
+            function changeLtColor(id) {
+                document.getElementById("myH1").style.color = id;
+                document.getElementById("myH2").style.color = id;
+            }
+        </script>
+
+    </div>
+
+</body>
+<footer>
+
+    <div class="footer">
+        <img src="Image/Shan/logo.png" class="footer-logo">
+        <br>
+        <div class="social-media">
+
+            <h2> contact us on</h2>
+            <br>
+
+            <a class="socialBtn" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+
+            <a class="socialBtn" href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+
+            <a class="socialBtn" href="https://www.google.com/"><i class="fab fa-google"></i></a>
+
+            <a class="socialBtn" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+
+            <a class="socialBtn" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+
+        </div>
+        <br>
+        <div class="editor">
+            <p>Page Editor:-<a href="HasinduCV.html">Hasindu Mendis</a></p>
+        </div>
+        <br>
+
+        <div class="feedback-button">
+
+            <h2>Rate Our Page</h2>
+
+            <a href="FeedBack.html"><button onclick="feedback()">feedback</button></a>
+        </div>
+
+    </div>
+</footer>
+
+<script>
+    function myFunction1() {
+        document.getElementById("font").style.fontSize = "1.0em";
+    }
+    function myFunction2() {
+        document.getElementById("font").style.fontSize = "1.2em";
+    }
+    function myFunction3() {
+        document.getElementById("font").style.fontSize = "1.4em";
+    }
+    function myFunction4() {
+        document.getElementById("font").style.fontSize = "1.5em";
+    }
+</script>
+</html>

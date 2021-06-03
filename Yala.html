@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yala National Park</title>
+    <link rel="icon" href="Image/Shan/Logo.png" type="image">
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-image: linear-gradient(to right, #a4b0be, #dfe4ea,#a4b0be,#a4b0be, #dfe4ea,#a4b0be);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        h1{
+            font-family: Snap ITC;
+            text-align: center;
+            font-size: 60px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 10px;
+            top: 20px;
+            background: #636e72;
+            letter-spacing: 28px;
+            -webkit-text-stroke: 2px black;
+        }
+
+        img {
+            vertical-align: middle;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .cursor {
+            cursor: pointer;
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .numbertext {
+            color: black;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+            background: #ffffff;
+        }
+
+        .caption-container {
+            text-align: center;
+            background-color: #222;
+            padding: 2px 16px;
+            color: white;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .column {
+            float: left;
+            width: 16.66%;
+        }
+
+        .demo {
+            opacity: 0.6;
+        }
+        .active,
+        .demo:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+<h1>Yala National Park</h1>
+
+<div class="container">
+    <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="Image/Yala/Yala%2001.jpg" style="width:800px" height="500px">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="Image/Yala/Yala%2002.jpg" style="width:800px" height="500px">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="Image/Yala/Yala%2003.jpg" style="width:800px" height="500px">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="Image/Yala/Yala%2004.jpg" style="width:800px" height="500px">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img src="Image/Yala/Yala%2005.jpg" style="width:800px" height="500px">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="Image/Yala/Yala%2006.jpg" style="width:800px" height="500px">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+    <div class="caption-container">
+        <p id="caption"></p>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img class="demo cursor" src="Image/Yala/Yala%2001.jpg" style="width:200px" height=120px" onclick="currentSlide(1)" alt="Elephant - Yala">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="Image/Yala/Yala%2002.jpg" style="width:200px" height="120px" onclick="currentSlide(2)" alt="Elephant Attack - Yala">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="Image/Yala/Yala%2003.jpg" style="width:200px" height="120px" onclick="currentSlide(3)" alt="Fox - Yala">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="Image/Yala/Yala%2004.jpg" style="width:200px" height="120px" onclick="currentSlide(4)" alt="Peacock - Yala">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="Image/Yala/Yala%2005.jpg" style="width:200px" height="120px" onclick="currentSlide(5)" alt="Tiger - Yala">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="Image/Yala/Yala%2006.jpg" style="width:200px" height="120px" onclick="currentSlide(6)" alt="Birds - Yala">
+        </div>
+    </div>
+</div>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+</script>
+
+</body>
+</html>

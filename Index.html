@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/png" href="Logo/Web page logo.png">
+			<style>
+
+			* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  margin: 0;
+			  font-family: "Bahnschrift";
+			  
+			  font-size: 17px;
+			}
+
+			h1{
+				color:white;  
+			}
+
+			h3{
+				color:white;
+			 }
+
+			img{
+			 	height:200px; 
+			 	width:200px;
+				border-radius:50%;
+			 }
+
+			#myVideo {
+			  position: fixed;
+			  right: 0;
+			  bottom: 0;
+			  min-width: 100%; 
+			  min-height: 100%;
+			}
+
+			.content {
+			  position: fixed;
+			  bottom: 0;
+			  background: rgba(0, 0, 0, 0.5);
+			  color: #f1f1f1;
+			  width: 100%;
+			  padding:10px; 
+			  height:300px; 
+			}
+
+			.images{
+				float:left;
+			}
+
+			.detailes{
+				float:left; 
+				width:170px;
+				height:400px;
+				overflow:hidden;
+				overflow-wrap:break-word;    
+			}
+
+			.person{
+				width:33%; 
+				height:100px;
+				float:left;
+			}
+
+			</style>
+			<title>WELCOME</title>
+	</head>
+	<body>
+
+		<video autoplay muted loop id="myVideo">
+		  <source src="Presentation/Video.mp4">
+		</video>
+
+		
+
+
+		<div class="content">
+		  <h1><center>Travel Sri Lanka</center></h1>
+		    <div class="person">
+			  <div class="images">
+			  	<img src="Image/Shan/shan.jpg" class="a">
+			  </div>
+			  <div class="detailes">
+			  	<h3>Shan Mendis</h3>
+			  	<p>IIT ID : 2018477</p>
+			  	<p>UOW ID : w1790803</p>
+			  </div>
+			</div>
+			<div class="person">
+			  <div class="images">
+			  	<img src="Image/Shan/sonnadara.jpeg" class="a">
+			  </div>
+			  <div class="detailes">
+			  	<h3>Chanka Sonnadara</h3>
+			  	<p>IIT ID : 2018506</p>
+			  	<p>UOW ID : w1790805</p>
+			  </div>
+			</div>
+			<div class="person">
+			  <div class="images">
+			  	<img src="Image/Shan/hasindu.jpeg" class="a">
+			  </div>
+			  <div class="detailes">
+			  	<h3>Haindu Mendis</h3>
+			  	<p>IIT ID : 2018491</p>
+			  	<p>UOW ID : w1790804</p>
+			  </div>
+			</div>
+			
+		</div>
+
+		<script>
+			
+			document.addEventListener('DOMContentLoaded', function() {
+				var seconds = 9;
+				var countdownEl = document.querySelector('#countdown'); 
+
+				setInterval(function() {
+				if (seconds === 0) {       window.location="Home.html";
+				return;
+				}
+				countdownEl.innerHTML = --seconds;
+				}, 1000);
+			});
+
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>FeedBack</title>
+
+    <link rel="icon" href="Image/Shan/Logo.png" type="image">
+
+    <script src="https://kit.fontawesome.com/855201d3bf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            background-image: linear-gradient(to bottom, #485460,#d2dae2,#485460,#d2dae2,#485460);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        *{
+            font-family: "montserrat",sans-serif;
+        }
+        .contact-section{
+            background: url(bg.png) no-repeat center;
+            background-size: cover;
+            padding: 40px 0;
+        }
+        .contact-section h1{
+            margin-top: 40px;
+            text-align: center;
+            color: black;
+            background-image: linear-gradient(to right,white,#2C3A47,white,#2C3A47,white);
+        }
+        .border{
+            width: 100px;
+            height: 10px;
+            background: #34495e;
+            margin: 40px auto;
+        }
+
+        .contact-form{
+            max-width: 600px;
+            margin: auto;
+            padding: 0 10px;
+            overflow: hidden;
+        }
+
+        .contact-form-text{
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            margin: 16px 0;
+            border: 0;
+            background: #111;
+            padding: 20px 40px;
+            outline: none;
+            color: #ddd;
+            transition: 0.5s;
+        }
+
+        textarea.contact-form-text{
+            resize: none;
+            height: 120px;
+        }
+        .contact-form-btn{
+            margin-top: 50px;
+            float: right;
+            border: 0;
+            background: #34495e;
+            color: #fff;
+            padding: 12px 50px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        .contact-form-btn:hover{
+            background: #2980b9;
+        }
+
+        .navigation-bar{
+            position: fixed;
+            top: 2%;
+            color: white;
+            left: 170px;
+        }
+
+        .navigation-bar ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .navigation-bar ul li {
+            display: inline-block;
+            width: 200px;
+            height: 40px;
+            text-align: center;
+            background-color: #2c3e50;
+            opacity: .9;
+            line-height: 40px;
+            font-size: 20px;
+        }
+
+        .navigation-bar ul li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+
+        .navigation-bar ul li a:hover {
+            background-color: #576574;
+            letter-spacing: 2px;
+        }
+
+        footer{
+            background-color: #718093;
+            clear: both;
+            margin-top: 10px;
+            padding: 10px 0;
+            height: 220px;
+            margin-bottom: 20px;
+        }
+        .footer-logo{
+            height: 60px;
+            width: 100px;
+            float: left;
+
+        }
+
+
+        .social-media{
+            margin-top: 70px;
+            transform: translateY(-50%);
+            width: 100%;
+            text-align: center;
+        }
+        .social-media h2{
+            margin-left: 20px;
+            margin-top: 10px;
+            float: left;
+        }
+
+        .socialBtn a{
+            margin-top: 100px;
+        }
+
+        .socialBtn{
+            float: left;
+            padding-top: 5px;
+            padding-left: 10px;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            color: coral;
+            background: #f1f1f1;
+            box-shadow: 0 5px 15px -5px #00000070;
+            margin: 08px;
+            border-radius: 30%;
+            overflow: hidden;
+            position: relative;
+
+        }
+
+        .socialBtn i{
+            alignment: center;
+            line-height: 50px;
+            font-size: 25px;
+            transition: 0.1s linear;
+        }
+
+        .socialBtn:hover i{
+            transform: scale(1.3);
+            color: #f1f1f1;
+        }
+
+        .socialBtn::before{
+            content: "";
+            position: absolute;
+            width: 120%;
+            height: 120%;
+            background: lightslategrey;
+            transform: rotate(45deg);
+            left: -110%;
+            top: 90%;
+        }
+
+        .socialBtn:hover::before{
+            animation: aaa 0.7s 1;
+            top: -10%;
+            left: -10%;
+        }
+
+        .rating{
+            width: 90%;
+            margin:auto;
+            text-align: center;
+        }
+
+        .rating h1{
+            text-align: center;
+            background-image: linear-gradient(to right,white,#2C3A47,white,#2C3A47,white);
+        }
+
+
+    </style>
+</head>
+
+
+<body>
+
+<div class="header">
+    <div class="navigation-bar">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="AboutUs.html">About us</a></li>
+            <li><a href="SiteMap.html">Site Map</a></li>
+        </ul>
+    </div>
+</div>
+<div class="contact-section">
+
+    <h1>FeedBack</h1>
+    <div class="border"></div>
+    <form class="contact-form">
+
+        <input type="text" class="contact-form-text" id="name" placeholder="Your name">
+
+        <input type="text" class="contact-form-text" id="email" placeholder="Your email">
+
+        <input type="text" class="contact-form-text" id="phone" placeholder="Your phone">
+
+        <textarea class="contact-form-text" id="msg" placeholder="Your message"></textarea>
+
+        <div class="rating">
+            <h1>Rate Us</h1><br><br>
+            <input type="radio" id="rate1" class="radio" name="select" value="Excellent">Excellent😍
+            <input type="radio" id="rate2" class="radio" name="select" value="Good">Good🙂
+            <input type="radio" id="rate3" class="radio" name="select" value="Bad">Bad🙁️
+            <input type="radio" id="rate4" class="radio" name="select" value="VeryBad"> Very Bad☹️
+    
+        </div>
+
+        <input type="submit" class="contact-form-btn" value="Send" onclick="submitForm()">
+
+    </form>
+
+    
+</div>
+
+<script>
+    function submitForm(){
+        
+        var valid_email_letters = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        var numbers = /^[0-9]+$/;
+
+    if (document.getElementById("name").value == "" || document.getElementById("email").value == "" || document.getElementById("phone").value == "" || document.getElementById("msg").value == "") {
+        alert("All fields must be filled out");
+    } else {
+
+        
+        var inputName = document.getElementById("name").value;
+        var inputEmail = document.getElementById("email").value;
+        var inputPhone = document.getElementById("phone").value;
+        var inputMsg = document.getElementById("msg").value;
+
+        var rates;
+
+        if(document.getElementById("rate1").checked){
+            rates = "Excellent😍";
+        } else if(document.getElementById("rate2").checked){
+            rates = "Good🙂";
+        } else if(document.getElementById("rate3").checked){ 
+            rates = "Bad🙁️";
+        } else if(document.getElementById("rate4").checked){
+            rates = "Very Bad☹️";
+        }
+        
+        if(inputEmail.match(valid_email_letters) && inputPhone.match(numbers)){
+            alert("Dear " + inputName + ","
+        + "\n\n" + "Your message is \n" + inputMsg 
+        + "\n\nYou have rated our site as " + rates
+        + "\n\nThank You!");
+        } else {
+            alert("Invalid Inputs");
+        }
+
+        
+
+    }
+    }
+
+
+
+
+</script>
+
+
+</body>
+
+<footer>
+
+    <div class="footer">
+        <img src="Image/Shan/logo.png" class="footer-logo">
+        <br>
+            <div class="social-media">
+
+                <h2> contact us on</h2>
+                <br>
+
+                <a class="socialBtn" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+
+                <a class="socialBtn" href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+
+                <a class="socialBtn" href="https://www.google.com/"><i class="fab fa-google"></i></a>
+
+                <a class="socialBtn" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+
+                <a class="socialBtn" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+
+            </div>
+
+
+    </div>
+
+</footer>
+</html>
